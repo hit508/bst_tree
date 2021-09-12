@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.4.1)
+
+project(tree_test)
+
+SET(CMAKE_CXX_COMPILER /usr/bin/g++)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+#aux_source_directory(. DIR_SRCS)
+
+add_executable(tree_test ${CMAKE_CURRENT_SOURCE_DIR}/tree_test.cpp)
+#add_library(bst_tree STATIC ${CMAKE_CURRENT_SOURCE_DIR}/bst_tree.cpp)
+#add_library(tree_test.a STATIC ${CMAKE_CURRENT_SOURCE_DIR}/tree_test.cpp)
+#target_link_libraries(tree_test bst_tree)
